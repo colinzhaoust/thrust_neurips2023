@@ -35,7 +35,7 @@ Do email me for details about other experiments, e.g., Figure 7 in Appendix.
 
 In our original paper, we present the application to conduct adaptive augmentation of external knowledge on CLS and QA. This application can be extended to other tasks such as ECBD, as discussed in Sec 6.1 of the paper.
 
-On the other hand, since the score is based on model familiarity with the queries, it can also be regarded as an instance-level zero-shot performance estimation without extra training or data generation.
+On the other hand, since the score is based on model familiarity with the queries, with no assumption on the external knowledge, it can also be regarded as an instance-level zero-shot performance estimation without extra training or data generation.
 
 ## Citation
 
