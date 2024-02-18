@@ -1,0 +1,27 @@
+export TRANSFORMERS_CACHE=../local_model/
+
+export task=agnews
+export task=esnli
+export task=cikqa
+export task=strategyqa
+export task=boolq
+export task=arc-easy
+export task=arc-hard
+
+export task=webquestions
+export task=curatedtrec
+export task=triviaqa
+export task=hotpotqa
+export task=nq
+
+export model=allenai/unifiedqa-v2-t5-base-1251000
+export model=allenai/unifiedqa-v2-t5-large-1251000
+export model=allenai/unifiedqa-v2-t5-3b-1251000
+
+export model=t5-base
+export model=t5-large
+export model=t5-3b
+
+# Sample
+CUDA_VISIBLE_DEVICES=0 python main_qa.py --task webquestions --model $model
+CUDA_VISIBLE_DEVICES=0 python main_cls.py --task cikqa --model $model

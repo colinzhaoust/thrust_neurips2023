@@ -1,0 +1,15 @@
+export TRANSFORMERS_CACHE=../local_model/
+export model=allenai/unifiedqa-v2-t5-base-1251000 (num layer 13)
+export model=allenai/unifiedqa-v2-t5-large-1251000 (num layer 25)
+export model=allenai/unifiedqa-v2-t5-3b-1251000 (num layer 25)
+
+# sample for single run
+CUDA_VISIBLE_DEVICES=0 python ./easy_thrust_exp.py --task arc-easy --model $model
+CUDA_VISIBLE_DEVICES=0 python ./easy_thrust_qa.py --task webquestions --model $model
+
+# sample for batch processing
+bash ./scripts/zero_base/run_agnews.bash #
+bash ./scripts/base/run_agnews.bash #
+
+
+

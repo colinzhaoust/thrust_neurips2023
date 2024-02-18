@@ -1,0 +1,33 @@
+export know=no
+
+export task=agnews
+export task=esnli
+export task=cikqa
+export task=strategyqa
+export task=boolq
+export task=arc-easy
+export task=arc-hard
+
+export task=webquestions
+export task=curatedtrec
+export task=triviaqa
+export task=hotpotqa
+export task=nq
+
+
+export model=t5-base
+export model=t5-large
+export model=t5-3b
+export model=gpt-j-6B
+export model=opt-30b
+
+export model=allenai/unifiedqa-v2-t5-base-1251000 #
+export model=allenai/unifiedqa-v2-t5-large-1251000 #
+export model=allenai/unifiedqa-v2-t5-3b-1251000 #
+
+# sample
+python zero_test_arc.py --gpu_id 0 --task agnews --per_gpu_mem 40GB
+python zero_test_qa.py --gpu_id 0 --task nq --use_know yes #
+
+
+
