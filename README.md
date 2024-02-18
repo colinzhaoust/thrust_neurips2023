@@ -1,5 +1,13 @@
 # Thrust: Adaptively Propels Large Language Models with External Knowledge
-This is the github repo for NeurIPS 2023 paper "Thrust: Adaptively Propels Large Language Models with External Knowledge". 
+This is the github repo for our NeurIPS 2023 paper "Thrust: Adaptively Propels Large Language Models with External Knowledge". 
+
+The focus of our work is to help conduct efficient usage of external information by only retrieving such knowledge when necessary.
+
+The method is built from the assumption that if a model can solve a task, it should be able to categorize the examples of this task as well. 
+
+We score if the model is familiar with a new example through its relations with multiple clusters of small-sized demo data on the same task.
+
+We report a 26% average performance improvement on 88% evaluated cases.
 
 ## Data Format
 Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and **./dataset/mini_qa_benchmark** for the multi-choice and QA data used, respectively. Do send an email for the full-size datasets.
@@ -23,6 +31,13 @@ Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and
 We provide the code for the main experiments on how to acquire the model output and thrust scores in **./experiment/** (Fig.4 and Table 1 in the original paper).
 
 Do email me for details about other experiments, e.g., Figure 7 in Appendix.
+
+
+## Application of Thrust
+
+In our original paper, we present the application to conduct adaptive augmentation of external knowledge on CLS and QA. This application can be extended to other tasks such as ECBD, as discussed in Sec 6.1 of the paper.
+
+On the other hand, since the score is based on model familiarity with the queries, it can also be regarded as an instance-level zero-shot performance estimation without extra training or data generation.
 
 ## Citation
 
