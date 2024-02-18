@@ -20,7 +20,9 @@ Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and
 
 ## Experiments
 
-We provide the code for the main experiments on how to acquire the model output and thrust scores in **./experiment/** (Fig.4 and Table 1 in the original paper). Do email me for details about other experiments, e.g., Figure 7 in Appendix.
+We provide the code for the main experiments on how to acquire the model output and thrust scores in **./experiment/** (Fig.4 and Table 1 in the original paper).
+
+Do email me for details about other experiments, e.g., Figure 7 in Appendix.
 
 ## Citation
 
