@@ -18,6 +18,9 @@ Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and
                 
                 "ans": answer to the question. Different datasets can have different answer formats.
 
+## Experiments
+
+We provide the code for the main experiments on how to acquire the model output and thrust scores in **./experiment/** (Fig.4 and Table 1 in the original paper). Do email me for details about other experiments, e.g., Figure 7 in Appendix.
 
 ## Citation
 
@@ -30,4 +33,8 @@ Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and
         url={https://openreview.net/forum?id=x9FOu3W6iy}
       }
 
-Code-running scripts will be released soon. Sample code and data are in the supplementary materials of the corresponding OpenReview page.
+
+## Others
+If you have any other questions about this repo, you are welcome to open an issue or send me an [email](mailto:xinranz3@andrew.cmu.edu), I will respond to that as soon as possible.
+
+Other running scripts will be released soon. Sample code and data are also available in the supplementary materials of the corresponding OpenReview page.
