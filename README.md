@@ -5,10 +5,15 @@ This is the github repo for NeurIPS 2023 paper "Thrust: Adaptively Propels Large
 Check our dataset format in mini-datasets at **./dataset/mini_mc_benchmark** and **./dataset/mini_qa_benchmark** for the multi-choice and QA data used, respectively. Do send an email for the full-size datasets.
 
   tasks: a string indicating which task the data belongs to. For MC, tasks are: cikqa, esnli, strategyqa, agnews, boolq, arc-easy, arc-hard. For QA, tasks are: hotpotqa, triviaqa, webquestions, curatedtrec, nq. Check our paper for details.
+  
       split: train, test, metric
+      
           examples: a list of dictionaries of the data involved. Keys are:
+          
               "sent": original query;
+              
               "knowledge": the corresponding knowledge from multiple sources (e.g., retrievers), Check our paper for details;
+              
               "ans": answer to the question. Different datasets can have different answer formats.
 
 
